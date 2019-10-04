@@ -1848,7 +1848,10 @@ type internal FsiInteractionProcessor
                 fsiDynamicCompiler.EvalParsedExpression(ctok, errorLogger, istate, expr)
 
             | IDefns (defs,_) -> 
+<<<<<<< HEAD
                 let istate = fsiDynamicCompiler.CommitDependencyManagerText(ctok, istate, lexResourceManager, errorLogger) 
+=======
+>>>>>>> origin/master
                 fsiDynamicCompiler.EvalParsedDefinitions (ctok, errorLogger, istate, true, false, defs)
 
             | IHash (ParsedHashDirective("load",sourceFiles,m),_) -> 
